@@ -13,19 +13,32 @@
     <div class="min-h-full">
         <nav class="bg-gray-800">
             <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                    <div class="flex items-center text-2xl font-medium text-gray-300">
-                        <img class="h-10 w-10 mr-4" src="img/foto_Anhar.png" alt="Anhar Khoirun Najib">
-                        Anhar Khoirun Najib
-                    </div>
-                    <div class="hidden flex justify-end md:block px-10">
-                        <div class="ml-10 flex justify-end items-baseline space-x-4">
-                            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
-                            <a href="project.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Projects</a>
-                            <a href="certif.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Certification</a>
-                        </div>
-                    </div>
+              <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center text-xl md:text-2xl font-medium text-gray-300">
+                  <img class="h-10 w-10 mr-4" src="img/foto_Anhar.png" alt="Anhar Khoirun Najib">
+                  Anhar Khoirun Najib
                 </div>
+                <div class="hidden flex justify-end md:block px-10">
+                  <div class="ml-10 flex justify-end items-baseline space-x-4">
+                    <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
+                    <a href="project.html" class="rounded-md px-3 bg-gray-900 px-3 py-2 text-sm font-medium text-white">Projects</a>
+                    <a href="certif.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Certifications</a>
+                  </div>
+                </div>
+                <div class="md:hidden">
+                  <button id="toggleMenu" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden bg-gray-800 px-2 pt-2 pb-3 space-y-1">
+              <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
+              <a href="project.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Projects</a>
+              <a href="certif.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Certifications</a>
             </div>
         </nav>
     
@@ -37,11 +50,11 @@
     </div>
 
     <main>
-        <div class="mx-auto p-5 flex justify-center gap-10">
-            <div class="flex items-center">
+        <div class="mx-auto p-5 flex justify-center gap-10 flex-col md:flex-row">
+            <div class="flex items-center justify-center">
                 <img src="img/dishcover.jpeg" alt="Dishcover" class="h-80 w-80 rounded-2xl" />
             </div>
-            <div class="w-1/2 text-justify flex flex-col gap-5">
+            <div class="md:w-1/2 text-justify flex flex-col gap-5">
                 <h3 class="text-3xl font-bold">
                     Dishcover
                 </h3>
@@ -63,8 +76,8 @@
             </div>
         </div>
         
-        <div class="mx-auto p-5 flex justify-center gap-10">
-            <div class="w-1/2 text-justify flex flex-col gap-5">
+        <div class="mx-auto p-5 flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 text-justify flex flex-col gap-5">
                 <h3 class="text-3xl font-bold">
                     UjangsTech
                 </h3>
@@ -85,16 +98,16 @@
                     </a>
                 </div>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center justify-center">
                 <img src="img/ujangtech.png" alt="UjangsTech" class="h-80 w-80 rounded-2xl" />
             </div>
         </div>
 
-        <div class="mx-auto p-5 flex justify-center gap-10">
-            <div class="flex items-center">
+        <div class="mx-auto p-5 flex justify-center gap-10 flex-col md:flex-row">
+            <div class="flex items-center justify-center">
                 <img src="img/pochinok.jpeg" alt="Pochinok Store" class="h-80 w-80 rounded-2xl" />
             </div>
-            <div class="w-1/2 text-justify flex flex-col gap-5">
+            <div class="md:w-1/2 text-justify flex flex-col gap-5">
                 <h3 class="text-3xl font-bold">
                     Top Up Pochinok Store
                 </h3>
@@ -115,8 +128,8 @@
             </div>
         </div>
 
-        <div class="mx-auto p-5 flex justify-center gap-10">
-            <div class="w-1/2 text-justify flex flex-col gap-5">
+        <div class="mx-auto p-5 flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 text-justify flex flex-col gap-5">
                 <h3 class="text-3xl font-bold">
                     AZtore
                 </h3>
@@ -137,16 +150,16 @@
                     </a>
                 </div>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center justify-center">
                 <img src="img/AZ.png" alt="AZtore" class="h-80 w-80 rounded-2xl" />
             </div>
         </div>
 
-        <div class="mx-auto p-5 flex justify-center gap-10">
-            <div class="flex items-center">
+        <div class="mx-auto p-5 flex justify-center gap-10 flex-col md:flex-row">
+            <div class="flex items-center justify-center">
                 <img src="img/Fire.jpg" alt="Fire Alarm" class="h-80 w-80 rounded-2xl" />
             </div>
-            <div class="w-1/2 text-justify flex flex-col gap-5">
+            <div class="md:w-1/2 text-justify flex flex-col gap-5">
                 <h3 class="text-3xl font-bold">
                     Fire Alarm Monitoring System
                 </h3>
@@ -173,8 +186,8 @@
     </main>
     
     <footer class="bg-gray-800 text-white py-6 mt-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <p class="text-m">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row md:justify-between items-center gap-5">
+            <p class="text-sm md:text-m">
                 &copy; 2024 Anhar Khoirun Najib. All rights reserved.
             </p>
 
@@ -211,6 +224,15 @@
                 </a> 
             </div>
     </footer>
+
+    <script>
+        const toggleMenu = document.getElementById('toggleMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+      
+        toggleMenu.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>

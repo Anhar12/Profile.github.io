@@ -9,53 +9,66 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
     <div class="min-h-full">
         <nav class="bg-gray-800">
             <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                    <div class="flex items-center text-2xl font-medium text-gray-300">
-                        <img class="h-10 w-10 mr-4" src="img/foto_Anhar.png" alt="Anhar Khoirun Najib">
-                        Anhar Khoirun Najib
-                    </div>
-                    <div class="hidden flex justify-end md:block px-10">
-                        <div class="ml-10 flex justify-end items-baseline space-x-4">
-                            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
-                            <a href="project.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                            <a href="certif.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Certification</a>
-                        </div>
-                    </div>
+              <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center text-xl md:text-2xl font-medium text-gray-300">
+                  <img class="h-10 w-10 mr-4" src="img/foto_Anhar.png" alt="Anhar Khoirun Najib">
+                  Anhar Khoirun Najib
                 </div>
+                <div class="hidden flex justify-end md:block px-10">
+                  <div class="ml-10 flex justify-end items-baseline space-x-4">
+                    <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
+                    <a href="project.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                    <a href="certif.html" class="rounded-md px-3 bg-gray-900 px-3 py-2 text-sm font-medium text-white">Certifications</a>
+                  </div>
+                </div>
+                <div class="md:hidden">
+                  <button id="toggleMenu" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden bg-gray-800 px-2 pt-2 pb-3 space-y-1">
+              <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Profile</a>
+              <a href="project.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              <a href="certif.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Certifications</a>
             </div>
         </nav>
     
         <header class="bg-white shadow">
             <div class="text-center px-4 py-6 sm:px-6 lg:px-8 ">
-                <h1 class="text-3xl font-bold tracking-tight text-gray-900">About My Certifications</h1>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">About My Certifications</h1>
             </div>
         </header>
     </div>
 
-    <main>
-        <h1 id="count" class="text-3xl font-bold mt-2 text-center tracking-tight text-gray-900">
+    <main class="mx-1 flex-grow">
+        <h1 id="count" class="text-xl md:text-3xl font-bold mt-2 text-center tracking-tight text-gray-900">
             1/8
         </h1>
-        <div class="max-w-6xl mx-auto mt-2 flex flex-row gap-10 items-center justify-center">
+        <div class="max-w-6xl mx-auto mt-2 flex flex-row gap-2 md:gap-10 items-center justify-center">
             <button class="rounded-md px-3 py-2 text-sm font-medium bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white" onclick="prevImage()">
-                <span class="text-4xl">&#10094;</span>
+                <span class="text-m md:text-4xl">&#10094;</span>
             </button>
-            <div class="w-2/3 h-[200px] flex justify-center items-center border-2 border-gray-400">
+            <div class="max-w-full md:w-2/3 flex justify-center items-center border-2 border-gray-400">
                 <img id="gallery-image" class="max-w-full max-h-[200px] object-contain" src="img/bangkit.jpg" />
             </div>
             <button class="rounded-md px-3 py-2 text-sm font-medium bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white" onclick="nextImage()">
-                <span class="text-4xl">&#10095;</span>
+                <span class="text-m md:text-4xl">&#10095;</span>
             </button>
         </div>
     </main>
     
     <footer class="bg-gray-800 text-white py-6 mt-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <p class="text-m">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row md:justify-between items-center gap-5">
+            <p class="text-sm md:text-m">
                 &copy; 2024 Anhar Khoirun Najib. All rights reserved.
             </p>
 
@@ -108,6 +121,13 @@
             document.getElementById('gallery-image').src = images[currentIndex];
             document.getElementById('count').innerHTML = (currentIndex+1).toString() + "/8";
         }
+
+        const toggleMenu = document.getElementById('toggleMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+      
+        toggleMenu.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 
