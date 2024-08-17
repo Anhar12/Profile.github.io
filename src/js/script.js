@@ -10,15 +10,39 @@ window.onscroll = function() {
     }
 }
 
-// hamburger
 const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#nav-menu');
 
-hamburger.addEventListener('click', function(){
+hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
-    document.querySelector('#nav-menu').classList.toggle('hidden');
-    document.querySelector('#nav-menu').classList.add('animate__animated');
-    document.querySelector('#nav-menu').classList.add('animate__fadeInLeft');
+    navMenu.classList.toggle('hidden');
+    navMenu.classList.toggle('active');
 });
+
+document.addEventListener('click', function (e) {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+        navMenu.classList.remove('active');
+    }
+});
+
+function checkScreenSize() {
+    const width = window.innerWidth;
+    
+    if (width >= 768) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+        navMenu.classList.remove('active');
+        document.querySelector('#nav-menu').classList.add('hidden');
+    }
+}
+
+// Panggil fungsi saat halaman pertama kali dimuat
+checkScreenSize();
+
+// Dengarkan event resize pada jendela
+window.addEventListener('resize', checkScreenSize);
 
 const observer1 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

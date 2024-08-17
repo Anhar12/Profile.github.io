@@ -27,6 +27,16 @@ body {
     @apply -rotate-45;
 }
 
+#nav-menu.active {
+    display: block;
+    height: calc(100vh - 72px); /* Adjust this value if needed */
+    position: fixed;
+    top: 72px; /* Sesuaikan dengan tinggi elemen div di atasnya */
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+}
+
 .slider-container {
     width: 700px;
     margin: 0 auto;

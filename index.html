@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,17 @@
     <link href="src/css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <!-- header -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="md:flex md:justify-between items-center md:px-4">
-                <div class="flex md:justify-between py-4 items-center gap-6">
+                <div id="nav-wrapper" class="flex md:justify-between py-4 items-center gap-6">
                     <button id="hamburger" name="hamburger" type="button" class="md:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
                     <a href="/" class="flex gap-2 md:gap-3 items-center font-bold text-lg text-primary">
                         <img src="img/foto_Anhar.png" width="40" alt="Anhar Khoirun Najib">
@@ -25,19 +27,24 @@
                     </a>
                 </div>
                 <div class="flex items-center px-4">
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full left-0 t-0 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none animate__animated animate__fadeInLeft font-bold">
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] w-full left-0 t-0 md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none animate__animated animate__fadeInLeft font-bold">
                         <ul class="block md:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                                <a href="#portofolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
                             </li>
                             <li class="group">
-                                <a href="#certificates" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Certificates</a>
+                                <a href="#certificates"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Certificates</a>
                             </li>
                         </ul>
                     </nav>
@@ -52,10 +59,13 @@
             <div class="flex flex-wrap">
                 <div class="hidden md:block w-full self-start px-4 md:w-1/2">
                     <div class="relative md:mt-0 md:right-0">
-                        <img src="img/fotosaya.png" alt="Anhar Khoirun najib" class="max-w-full mx-auto animate-bounce-once duration-500"/>
+                        <img src="img/fotosaya.png" alt="Anhar Khoirun najib"
+                            class="max-w-full mx-auto animate-bounce-once duration-500" />
                         <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125 scale-110">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#0EA5E9" d="M32,-12.6C42.8,0.3,53.8,18.9,48.5,37.6C43.3,56.4,21.6,75.4,-1.1,76.1C-23.9,76.7,-47.8,59.1,-53.6,40C-59.3,20.9,-47,0.4,-35.1,-13.1C-23.1,-26.6,-11.6,-33.1,-0.5,-32.8C10.6,-32.5,21.2,-25.4,32,-12.6Z" transform="translate(100 100)" />
+                                <path fill="#0EA5E9"
+                                    d="M32,-12.6C42.8,0.3,53.8,18.9,48.5,37.6C43.3,56.4,21.6,75.4,-1.1,76.1C-23.9,76.7,-47.8,59.1,-53.6,40C-59.3,20.9,-47,0.4,-35.1,-13.1C-23.1,-26.6,-11.6,-33.1,-0.5,-32.8C10.6,-32.5,21.2,-25.4,32,-12.6Z"
+                                    transform="translate(100 100)" />
                             </svg>
                         </span>
                     </div>
@@ -69,26 +79,34 @@
                     <h2 class="font-medium text-xs text-light md:mb-5 md:text-2xl">
                         Student | Back-End Developer | Web Developer
                     </h2>
-                    
+
                     <div class="md:hidden w-full md:w-1/2 mb-4">
                         <div class="relative mt-4 md:mt-0 md:right-0">
-                            <img src="img/fotosaya.png" alt="Anhar Khoirun najib" class="max-w-full mx-auto"/>
+                            <img src="img/fotosaya.png" alt="Anhar Khoirun najib" class="max-w-full mx-auto" />
                             <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125 scale-110">
                                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#0EA5E9" d="M32,-12.6C42.8,0.3,53.8,18.9,48.5,37.6C43.3,56.4,21.6,75.4,-1.1,76.1C-23.9,76.7,-47.8,59.1,-53.6,40C-59.3,20.9,-47,0.4,-35.1,-13.1C-23.1,-26.6,-11.6,-33.1,-0.5,-32.8C10.6,-32.5,21.2,-25.4,32,-12.6Z" transform="translate(100 100)" />
+                                    <path fill="#0EA5E9"
+                                        d="M32,-12.6C42.8,0.3,53.8,18.9,48.5,37.6C43.3,56.4,21.6,75.4,-1.1,76.1C-23.9,76.7,-47.8,59.1,-53.6,40C-59.3,20.9,-47,0.4,-35.1,-13.1C-23.1,-26.6,-11.6,-33.1,-0.5,-32.8C10.6,-32.5,21.2,-25.4,32,-12.6Z"
+                                        transform="translate(100 100)" />
                                 </svg>
                             </span>
                         </div>
                     </div>
 
                     <p class="font-medium text-light mb-4 md:mb-10 leading-relaxed text-justify">
-                        As a computer science student at the University of Mulawarman, I have a strong interest in web development, back-end development, cloud computing, machine learning, internet of things, and augmented reality. I am excited to further deepen my knowledge and experience in information technology to solve real-world problems.
+                        As a computer science student at the University of Mulawarman, I have a strong interest in web
+                        development, back-end development, cloud computing, machine learning, internet of things, and
+                        augmented reality. I am excited to further deepen my knowledge and experience in information
+                        technology to solve real-world problems.
                     </p>
 
-                    <a href="#" class="inline-flex items-center text-xl font-semibold text-white bg-primary py-3 px-5 rounded-e-full hover:bg-secondary hover:shadow-lg transition duration-300 ease-in-out">
+                    <a href="#"
+                        class="inline-flex items-center text-xl font-semibold text-white bg-primary py-3 px-5 rounded-e-full hover:bg-secondary hover:shadow-lg transition duration-300 ease-in-out">
                         Contact Me
-                        <svg class="ml-2 h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        <svg class="ml-2 h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </a>
                 </div>
@@ -106,7 +124,13 @@
                         About Me
                     </h3>
                     <p class="font-medium text-base text-light max-w-xl">
-                        I am a computer science student at the University of Mulawarman, with a keen interest in web development, back-end programming, cloud computing, machine learning, internet of things, and augmented reality. Throughout my studies, I have gained valuable experience working on a variety of projects, including websites, back-end applications, cloud-based solutions, IoT systems, desktop applications, and augmented reality applications. What drives me is a deep passion for technology and a constant desire to learn about the latest advancements in the field of information technology. 
+                        I am a computer science student at the University of Mulawarman, with a keen interest in web
+                        development, back-end programming, cloud computing, machine learning, internet of things, and
+                        augmented reality. Throughout my studies, I have gained valuable experience working on a variety
+                        of projects, including websites, back-end applications, cloud-based solutions, IoT systems,
+                        desktop applications, and augmented reality applications. What drives me is a deep passion for
+                        technology and a constant desire to learn about the latest advancements in the field of
+                        information technology.
                     </p>
                 </div>
                 <div class="w-full px-4 md:w-1/2">
@@ -114,40 +138,48 @@
                         Feel free to reach out
                     </h3>
                     <p class="font-medium text-base text-light max-w-xl mb-5">
-                        As I continue my educational journey, I am excited to delve deeper into the realms of web development, cloud computing, machine learning, and augmented reality, with the ultimate goal of leveraging these technologies to solve real-world problems.
+                        As I continue my educational journey, I am excited to delve deeper into the realms of web
+                        development, cloud computing, machine learning, and augmented reality, with the ultimate goal of
+                        leveraging these technologies to solve real-world problems.
                     </p>
                     <div class="flex items-center space-x-5 justify-center md:justify-normal">
-                        <a href="mailto:anharkhoirun@gmail.com" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="mailto:anharkhoirun@gmail.com"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/anhar-khoirun-najib-96956621a/" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="https://www.linkedin.com/in/anhar-khoirun-najib-96956621a/"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                             </svg>
                         </a>
-                        <a href="https://github.com/Anhar12" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="https://github.com/Anhar12"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/085845723207" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="https://wa.me/085845723207"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/anharrrrrr_" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="https://www.instagram.com/anharrrrrr_"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/anhar.najib" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
+                        <a href="https://www.facebook.com/anhar.najib"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white fadeInUp-element opacity-0">
                             <svg width="20" class="fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
@@ -176,126 +208,196 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-10 md:gap-16 md:w-[95%] justify-center mx-auto">
-                                                                                     
-                    <a href="https://github.com/Project-Dishcover" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/dishcover.jpeg" alt="Dishcover" class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+
+                    <a href="https://github.com/Project-Dishcover"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/dishcover.jpeg" alt="Dishcover"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center px-2 pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
                                 <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Dishcover</h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Android-based food recommendation system called "Dishcover" This project involved implementing machine learning models to classify food ingredients captured by the device's camera, and then providing personalized recipe recommendations based on the recognized ingredients.
+                                    Android-based food recommendation system called "Dishcover" This project involved
+                                    implementing machine learning models to classify food ingredients captured by the
+                                    device's camera, and then providing personalized recipe recommendations based on the
+                                    recognized ingredients.
                                 </p>
                             </div>
                         </div>
-                    </a> 
+                    </a>
 
-                    <a href="https://github.com/Anhar12/UAS-IOT" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/ujangtech.png" alt="UjangsTech" class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+                    <a href="https://github.com/Anhar12/UAS-IOT"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/ujangtech.png" alt="UjangsTech"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center px-2 pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
                                 <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">UjangsTech</h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Android-based IoT system, focused on creating a solution to monitor and provide information about air quality through a mobile application. Beyond just monitoring, the application also allows users to control various IoT devices connected to the system.
+                                    Android-based IoT system, focused on creating a solution to monitor and provide
+                                    information about air quality through a mobile application. Beyond just monitoring,
+                                    the application also allows users to control various IoT devices connected to the
+                                    system.
                                 </p>
                             </div>
                         </div>
-                    </a>     
+                    </a>
 
-                    <a href="https://github.com/Anhar12/pa-praktikum-iot-unmul-b4" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/Fire.jpg" alt="Fire Alarm" class="w-full h-full scale-125 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-150 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+                    <a href="https://github.com/Anhar12/pa-praktikum-iot-unmul-b4"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/Fire.jpg" alt="Fire Alarm"
+                            class="w-full h-full scale-125 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-150 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center px-2 pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
                                 <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Fire Alarm</h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Android-based IoT solution designed to provide comprehensive monitoring and alert capabilities for potential fire hazards. This system utilizes various sensors to continuously monitor the conditions within a designated space, and can automatically trigger an alarm in the event of a fire.
+                                    Android-based IoT solution designed to provide comprehensive monitoring and alert
+                                    capabilities for potential fire hazards. This system utilizes various sensors to
+                                    continuously monitor the conditions within a designated space, and can automatically
+                                    trigger an alarm in the event of a fire.
                                 </p>
                             </div>
                         </div>
-                    </a>     
+                    </a>
 
-                    <a href="https://lebakcilong.github.io/" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/logo kukar.png" alt="Lebak Cilong" class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+                    <a href="https://lebakcilong.github.io/"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/logo kukar.png" alt="Lebak Cilong"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
-                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Lebak Cilong Profile Website</h2>
+                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Lebak Cilong
+                                    Profile Website</h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Website-based application developed as a media for information and introduction to the profile of Lebak Cilong Village, Muara Wis District, Kutai Kartanegara Regency.
+                                    Website-based application developed as a media for information and introduction to
+                                    the profile of Lebak Cilong Village, Muara Wis District, Kutai Kartanegara Regency.
                                 </p>
                             </div>
                         </div>
-                    </a>     
+                    </a>
 
-                    <a href="https://drive.google.com/drive/folders/1I_dceyplzZg8Sbg2jdPBQoTyiIEFVM_v" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/sea-animal.jpeg" alt="Sea Animals AR" class="w-full h-full scale-125 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-150 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+                    <a href="https://drive.google.com/drive/folders/1I_dceyplzZg8Sbg2jdPBQoTyiIEFVM_v"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/sea-animal.jpeg" alt="Sea Animals AR"
+                            class="w-full h-full scale-125 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-150 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center px-2 pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
-                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Sea Animals AR</h2>
+                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Sea Animals AR
+                                </h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Android-based AR application, as a medium for introducing and marketing the book industry. This application can display 3D marine animal objects by scanning book pages complete with animations.
+                                    Android-based AR application, as a medium for introducing and marketing the book
+                                    industry. This application can display 3D marine animal objects by scanning book
+                                    pages complete with animations.
                                 </p>
                             </div>
                         </div>
-                    </a>     
+                    </a>
 
-                    <a href="https://telukdalam.my.id" class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
-                        <img src="img/logo kukar.png" alt="Teluk Dalam" class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110"/>
-                        <div class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30"></div>
-                        <div class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
+                    <a href="https://telukdalam.my.id"
+                        class="w-[90%] md:w-[28%] h-80 group relative hover:drop-shadow-xl rounded-lg overflow-hidden flex items-center justify-center shadow-lg opacity-0 fadeInZoom-element">
+                        <img src="img/logo kukar.png" alt="Teluk Dalam"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-125 group-hover:brightness-110" />
+                        <div
+                            class="absolute inset-0 bg-sky-950 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-30">
+                        </div>
+                        <div
+                            class="absolute bottom-0 bg-primary h-10 transition-all duration-500 ease-in-out group-hover:h-[50%] w-full items-center px-2 md:px-4">
                             <div class="flex gap-2 md:gap-3 items-center pt-2">
-                                <span class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
-                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                <span
+                                    class="rounded-full border-2 border-white p-1 transition-transform duration-500 ease-in-out transform group-hover:rotate-90">
+                                    <svg class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            d="M9 5l7 7-7 7" />
                                     </svg>
                                 </span>
-                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Teluk Dalam Profile Website</h2>
+                                <h2 class="font-medium md:font-semibold text-white text-md md:text-lg">Teluk Dalam
+                                    Profile Website</h2>
                             </div>
-                            <div class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
+                            <div
+                                class="translate-y-28 transition-all group-hover:translate-y-0 ease-in-out duration-500 p-2 items-center">
                                 <p class="hidden group-hover:block text-justify text-xs font-medium text-white">
-                                    Website-based application developed as a media for information and introduction to the profile of Teluk Dalam Village, Muara Jawa District, Kutai Kartanegara Regency.
+                                    Website-based application developed as a media for information and introduction to
+                                    the profile of Teluk Dalam Village, Muara Jawa District, Kutai Kartanegara Regency.
                                 </p>
                             </div>
                         </div>
-                    </a>  
+                    </a>
                 </div>
             </div>
         </div>
@@ -324,36 +426,34 @@
                         <img src="img/bangkit.jpg" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/cloud.jpg"  class=""/>
+                        <img src="img/cloud.jpg" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/js.jpg"  class=""/>
+                        <img src="img/js.jpg" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/web.jpg"  class=""/>
+                        <img src="img/web.jpg" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/1.png"  class=""/>
+                        <img src="img/1.png" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/2.png"  class=""/>
+                        <img src="img/2.png" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/3.png"  class=""/>
+                        <img src="img/3.png" class="" />
                     </div>
                     <div class="flex-shrink-0 w-full">
-                        <img src="img/4.png"  class=""/>
+                        <img src="img/4.png" class="" />
                     </div>
                 </div>
-                <button
-                    class="prev-btn bg-dark rounded-full p-2 shadow-md hover:bg-light    focus:outline-none"
+                <button class="prev-btn bg-dark rounded-full p-2 shadow-md hover:bg-light    focus:outline-none"
                     id="prev-btn">
                     <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-                <button
-                    class="next-btn bg-dark rounded-full p-2 shadow-md hover:bg-light    focus:outline-none"
+                <button class="next-btn bg-dark rounded-full p-2 shadow-md hover:bg-light    focus:outline-none"
                     id="next-btn">
                     <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -361,14 +461,30 @@
                 </button>
             </div>
             <div class="flex justify-center space-x-2" id="indicator">
-                <div class="w-3 h-3 bg-primary rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
-                <div class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"></div>
+                <div
+                    class="w-3 h-3 bg-primary rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
+                <div
+                    class="w-3 h-3 bg-gray-400 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer">
+                </div>
             </div>
         </div>
     </section>
@@ -419,45 +535,51 @@
                 </div>
 
             </div>
-            
+
             <div class="border border-white mb-8 md:mb-10"></div>
-            
+
             <div class="container flex flex-col-reverse md:flex-row gap-3 items-center md:justify-between">
                 <div class="text-md space-y-1">
                     <p>&copy; 2024 Anhar Khoirun Najib. All rights reserved.</p>
                 </div>
                 <div class="flex items-center space-x-5 justify-center md:justify-normal">
-                    <a href="mailto:anharkhoirun@gmail.com" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="mailto:anharkhoirun@gmail.com"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/anhar-khoirun-najib-96956621a/" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="https://www.linkedin.com/in/anhar-khoirun-najib-96956621a/"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                         </svg>
                     </a>
-                    <a href="https://github.com/Anhar12" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="https://github.com/Anhar12"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                     </a>
-                    <a href="https://wa.me/085845723207" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="https://wa.me/085845723207"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/anharrrrrr_" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="https://www.instagram.com/anharrrrrr_"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                         </svg>
                     </a>
-                    <a href="https://www.facebook.com/anhar.najib" class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
+                    <a href="https://www.facebook.com/anhar.najib"
+                        class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:shadow-lg hover:bg-white hover:text-primary">
                         <svg width="20" class="fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
@@ -470,4 +592,5 @@
 
     <script src="src\js\script.js"></script>
 </body>
+
 </html>

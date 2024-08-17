@@ -620,18 +620,6 @@ video {
   top: 0px;
 }
 
-.top-full {
-  top: 100%;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -828,10 +816,6 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1018,11 +1002,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-8 {
@@ -1226,6 +1205,18 @@ body {
 .hamburger-active > span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+#nav-menu.active {
+  display: block;
+  height: calc(100vh - 72px);
+  /* Adjust this value if needed */
+  position: fixed;
+  top: 72px;
+  /* Sesuaikan dengan tinggi elemen div di atasnya */
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow-y: auto;
 }
 
 .slider-container {
