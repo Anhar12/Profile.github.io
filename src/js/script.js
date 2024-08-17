@@ -17,7 +17,7 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     document.querySelector('#nav-menu').classList.toggle('hidden');
     document.querySelector('#nav-menu').classList.add('animate__animated');
-    document.querySelector('#nav-menu').classList.add('animate__fadeInRight');
+    document.querySelector('#nav-menu').classList.add('animate__fadeInLeft');
 });
 
 const observer1 = new IntersectionObserver((entries) => {
@@ -28,7 +28,7 @@ const observer1 = new IntersectionObserver((entries) => {
                 element.style.animationDelay = `${index * 0.15}s`;
                 element.classList.add('animate-fade-in-up');
             });
-            observer.unobserve(entry.target);
+            observer1.unobserve(entry.target);
         }
     });
 });
@@ -41,7 +41,7 @@ const observer2 = new IntersectionObserver((entries) => {
                 element.style.animationDelay = `${index * 0.25}s`;
                 element.classList.add('animate-fade-in-zoom');
             });
-            observer.unobserve(entry.target);
+            observer2.unobserve(entry.target);
         }
     });
 });

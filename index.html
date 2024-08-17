@@ -12,21 +12,20 @@
     <!-- header -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
-            <div class="flex items-center justify-between">
-                <div class="px-4">
-                    <a href="/" class="inline-flex gap-3 items-center font-bold text-lg text-primary py-6">
+            <div class="md:flex md:justify-between items-center md:px-4">
+                <div class="flex md:justify-between py-4 items-center gap-6">
+                    <button id="hamburger" name="hamburger" type="button" class="md:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                    </button>
+                    <a href="/" class="flex gap-2 md:gap-3 items-center font-bold text-lg text-primary">
                         <img src="img/foto_Anhar.png" width="40" alt="Anhar Khoirun Najib">
                         Anhar Khoirun Najib
                     </a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="md:hidden block absolute right-4">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
-                    </button>
-
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-0 t-0 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none animate__animated animate__fadeInRight font-bold">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full left-0 t-0 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none animate__animated animate__fadeInLeft font-bold">
                         <ul class="block md:flex">
                             <li class="group">
                                 <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
@@ -40,9 +39,6 @@
                             <li class="group">
                                 <a href="#certificates" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Certificates</a>
                             </li>
-                            <!-- <li class="group">
-                                <a href="#projects" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
-                            </li> -->
                         </ul>
                     </nav>
                 </div>
