@@ -20,20 +20,34 @@ hamburger.addEventListener('click', function(){
     document.querySelector('#nav-menu').classList.add('animate__fadeInRight');
 });
 
-function checkScreen() {
-    console.log(window.innerWidth);
-    if (window.innerWidth < 768) {
-        document.querySelector('#nav-menu').classList.add('animate__animated');
-        document.querySelector('#nav-menu').classList.add('animate__fadeInRight');
-    } else {
-        document.querySelector('#nav-menu').classList.remove('animate__animated');
-        document.querySelector('#nav-menu').classList.remove('animate__fadeInRight');
-    }
-}
+const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const elements = document.querySelectorAll('.fadeInUp-element');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.15}s`;
+                element.classList.add('animate-fade-in-up');
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+});
 
-window.onresize = ('resize', checkScreen);
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const elements = document.querySelectorAll('.fadeInZoom-element');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.25}s`;
+                element.classList.add('animate-fade-in-zoom');
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+});
 
-checkScreen();
+observer1.observe(document.querySelector('.fadeInUp-element'));
+observer2.observe(document.querySelector('.fadeInZoom-element'));
 
 const slider = document.getElementById('slider');
 const prevBtn = document.getElementById('prev-btn');
@@ -76,3 +90,4 @@ indicators.forEach((indicator, index) => {
         goToSlide(index);
     });
 });
+
