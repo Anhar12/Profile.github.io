@@ -35,13 +35,14 @@ function checkScreenSize() {
         navMenu.classList.add('hidden');
         navMenu.classList.remove('active');
         document.querySelector('#nav-menu').classList.add('hidden');
+    } else {
+        const header = document.querySelector('header');
+        header.classList.add('navbar-fixed');
     }
 }
 
-// Panggil fungsi saat halaman pertama kali dimuat
 checkScreenSize();
 
-// Dengarkan event resize pada jendela
 window.addEventListener('resize', checkScreenSize);
 
 const observer1 = new IntersectionObserver((entries) => {
